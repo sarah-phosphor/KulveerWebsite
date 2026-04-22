@@ -7,102 +7,210 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-  <script type="text/javascript">WebFont.load({ google: { families: ["Jost:300,400,500,600"] } });</script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- NAV -->
   <nav class="navbar">
-    <div class="nav-name">Kulveer Taggar</div>
+    <a href="#" class="nav-name">KT</a>
     <div class="nav-links">
       <a href="#story">Story</a>
+      <a href="#beliefs">Beliefs</a>
+      <a href="#stories">Stories</a>
       <a href="#writing">Writing</a>
-      <a href="#investing">Investing</a>
-      <a href="https://phosphorcap.com" target="_blank">Phosphor Capital</a>
+      <a href="https://phosphorcap.com" target="_blank">Phosphor</a>
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- HERO — full viewport, cinematic -->
   <section class="hero">
-    <div class="container-wide">
-      <div class="hero-inner">
-        <div class="hero-text">
-          <h1>Founder. Investor.<br>Advice from experience.</h1>
-          <p>2 YC batches. 2 exits. Over $200M raised. $450M in revenue. Everything I learned, now behind the next wave of YC founders.</p>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Kulveer Taggar</div>
+      <h1 class="hero-headline reveal">
+        I don't have a thesis.<br>
+        <span class="hero-italic">I have pattern recognition<br>and scar tissue.</span>
+      </h1>
+      <div class="hero-bio reveal-delay">
+        YC W07. Built Zeus Living to $450M revenue.<br>
+        Now investing in the next generation through Phosphor Capital.
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- PHOTO + QUOTE — editorial spread -->
+  <section class="editorial">
+    <div class="editorial-inner">
+      <div class="editorial-image">
+        <img src="images/kulveer-headshot.jpg" alt="Kulveer Taggar">
+      </div>
+      <div class="editorial-text">
+        <p class="editorial-lead">Born in London. Raised in Kenya. Educated at Oxford. Read <em>eBoys</em> on the commute to Deutsche Bank and couldn't stop thinking about startups.</p>
+        <p class="editorial-lead">Eight weeks before finals, flew to San Francisco. Saw Stanford and Google. Never went back.</p>
+        <p class="editorial-lead">That was 2007. He's been to every YC Demo Day since.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY TIMELINE -->
+  <section class="timeline" id="story">
+    <div class="timeline-inner">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-label">YC W07</div>
+        <div class="timeline-content">
+          <p>Fourth batch. Thirteen companies. Co-founded Auctomatic with his cousin Harj and Patrick and John Collison — before they started Stripe. One of the first international teams in YC.</p>
         </div>
-        <div class="hero-image">
-          <img src="images/kulveer-headshot.jpg" alt="Kulveer Taggar">
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-label">Zeus Living</div>
+        <div class="timeline-content">
+          <p>$1M to $5M to $15M to $65M. On track to do $120M when the pandemic hit. 270 employees. $200M raised. Survived on three weeks of runway. Sold to Blueground in 2023.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-label">Phosphor Capital</div>
+        <div class="timeline-content">
+          <p>300+ investments in YC companies. $100K-$500K checks. Decisions in 24-48 hours. "If I know, I know. And I can give you back a little bit of time."</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-label">YC Visiting Partner</div>
+        <div class="timeline-content">
+          <p>Eighteen years in the ecosystem. Now working with the next generation of founders.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- BIO STRIP -->
-  <div class="bio-strip">
-    <div class="container">
-      <p>Born in London. Raised in Kenya. Educated at Oxford.<br>Building in San Francisco since 2007.</p>
+  <!-- BIG QUOTE 1 -->
+  <section class="big-quote">
+    <div class="big-quote-inner">
+      <blockquote>
+        "We had three weeks of runway. I went to bed feeling very sorry for this thing I'd worked so hard on. But in the morning I thought —<br><em>no, it's not dying.</em>"
+      </blockquote>
     </div>
-  </div>
+  </section>
 
-  <!-- STORY -->
-  <section class="story section-border" id="story">
-    <div class="container">
-      <h2>Story</h2>
-      <div class="story-list">
-        <div class="story-item">
-          <div class="year">Oxford</div>
-          <div class="content">
-            <p>PPE at Oxford. Founded the entrepreneurship society. Eight weeks before finals, flew to San Francisco, saw Stanford and Google, and never looked back.</p>
-          </div>
+  <!-- BELIEFS -->
+  <section class="beliefs" id="beliefs">
+    <div class="beliefs-inner">
+      <h2 class="section-label">What I believe</h2>
+
+      <div class="belief">
+        <div class="belief-number">01</div>
+        <div class="belief-content">
+          <h3>High output and customer obsession are the two necessary conditions.</h3>
+          <p>Not sufficient for success. But necessary. The best YC companies I've ever seen — they all had both. Every single week there's forward progress. It doesn't always mean a new feature — it's the speed of learning.</p>
         </div>
-        <div class="story-item">
-          <div class="year">YC W07 · Auctomatic</div>
-          <div class="content">
-            <p>Co-founded Auctomatic with Patrick and John Collison (before Stripe) and his cousin Harj Taggar. One of the first international teams in YC. Has attended every Demo Day since.</p>
-          </div>
+      </div>
+
+      <div class="belief">
+        <div class="belief-number">02</div>
+        <div class="belief-content">
+          <h3>Be the best in the world at something narrow.</h3>
+          <p>"Reducto — when I remember that pitch, it was like, we're just trying to understand a PDF. Which felt narrow. But if you're actually legitimately the best in the world at that, that's fucking huge."</p>
         </div>
-        <div class="story-item">
-          <div class="year">YC S11 · Zeus Living</div>
-          <div class="content">
-            <p>Founded Zeus Living. $450M revenue. $200M raised. 270 employees. Survived the pandemic on three weeks of runway. Sold to Blueground in 2023.</p>
-          </div>
+      </div>
+
+      <div class="belief">
+        <div class="belief-number">03</div>
+        <div class="belief-content">
+          <h3>Burnout comes from people, not from work.</h3>
+          <p>Working hard while making progress is energizing. The burnout I experienced at Zeus — it came from people. Brilliant hires who weren't aligned. Investors who wanted control. The biggest risk to building a decade-long company is losing your energy.</p>
         </div>
-        <div class="story-item">
-          <div class="year">2024 · Phosphor Capital</div>
-          <div class="content">
-            <p>Launched Phosphor to invest exclusively in YC founders. 296+ investments. $100K-$500K checks. Decisions in 24-48 hours.</p>
-          </div>
+      </div>
+
+      <div class="belief">
+        <div class="belief-number">04</div>
+        <div class="belief-content">
+          <h3>The outliers won't be obvious today.</h3>
+          <p>The biggest companies of the next decade aren't going to look like obvious bets right now. I've been around YC enough to know that things like this work. It always looks a bit fragile in the early days.</p>
         </div>
-        <div class="story-item">
-          <div class="year">2026 · YC Visiting Partner</div>
-          <div class="content">
-            <p>Joined YC as a Visiting Partner for P26. Eighteen years in the ecosystem. Now working with the next generation.</p>
-          </div>
+      </div>
+
+      <div class="belief">
+        <div class="belief-number">05</div>
+        <div class="belief-content">
+          <h3>It's honestly a little bit of vibes.</h3>
+          <p>Sometimes I'm sitting there writing my investment memo and I'm like — what's a more sophisticated way of saying I think these founders are amazing? I've been to every Demo Day since 2007. If I know, I know.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- QUOTE -->
-  <div class="quote-section">
-    <div class="container-wide">
-      <div class="quote-with-image">
-        <div class="quote-text">
-          <blockquote>"We had 2–3 weeks of runway. I went to bed feeling very sorry for this thing I'd worked on so hard. But in the morning I thought — no, it's not dying. I don't know how, but I'm going to fight through this."</blockquote>
-          <div class="attribution">— on Zeus Living's pandemic survival</div>
+  <!-- BIG QUOTE 2 -->
+  <section class="big-quote dark">
+    <div class="big-quote-inner">
+      <blockquote>
+        "The modern day incarnation of Alexander the Great, Caesar, Napoleon — it's tech founders. It is in their mind, it's warfare. There's territory out there to be conquered. Either you conquer it or someone else will."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- OFF THE RECORD STORIES -->
+  <section class="stories" id="stories">
+    <div class="stories-inner">
+      <h2 class="section-label">Off the record</h2>
+      <p class="stories-subtitle">The stories I actually tell founders. Not advice — just what happened.</p>
+
+      <div class="story-block">
+        <div class="story-tag">On customer obsession</div>
+        <h3>The Stripe bug-fix</h3>
+        <p>Patrick had this rule where every engineer was on call 24/7. Laptop on you at all times — watching a movie, on a date, asleep. Users would hit a bug on Stripe, start opening their laptops to write an email, and by the time they sent it, Stripe would ping them: "Hey, we noticed you had an issue. It's fixed now."</p>
+        <p>People were like, whoa, what the fuck?</p>
+      </div>
+
+      <div class="story-block">
+        <div class="story-tag">On choosing investors</div>
+        <h3>The investors I'd rather forget</h3>
+        <p>I raised from Soros, Susquehanna — the people that own 20% of ByteDance. They don't give a shit about YC or Bookface reviews or anything. They're brutal. I had so much pressure to sell.</p>
+        <p>The truth is I sold my company for less than it was worth because I wanted to get these people out of my life. I never wanted to sell. I've taken a lot of my rebound energy into trying to help founders avoid what I went through.</p>
+      </div>
+
+      <div class="story-block">
+        <div class="story-tag">On VC red flags</div>
+        <h3>When the VC thinks it's their company</h3>
+        <p>One VC — in the first meeting with an amazing company — says, okay, I need you to triple revenue in three months. Wants monthly pseudo board meetings. The founder told me, "It's really weird, but it feels like I report to the VC."</p>
+        <p>VCs that act like it's their company. Big red flag.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW I HELP -->
+  <section class="help">
+    <div class="help-inner">
+      <h2 class="section-label">How I help</h2>
+      <div class="help-grid">
+        <div class="help-item">
+          <div class="help-letter">C</div>
+          <h3>Customers</h3>
+          <p>I helped Reducto close Harvey AI. I do reference calls. I make warm intros that convert. If I can get you in the room, I will.</p>
         </div>
-        <div class="quote-image">
-          <img src="images/kul-founder-1.jpg" alt="Kulveer working with a founder at YC">
+        <div class="help-item">
+          <div class="help-letter">C</div>
+          <h3>Candidates</h3>
+          <p>I closed Delve's founding engineer. I'll get on the phone with your candidates and help sell them on your company.</p>
+        </div>
+        <div class="help-item">
+          <div class="help-letter">C</div>
+          <h3>Context</h3>
+          <p>20+ portfolio companies have raised their Series A. I know what VCs want, how to run the process, and the stuff that trips people up.</p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- WRITING -->
-  <section class="writing section-border" id="writing">
-    <div class="container">
-      <h2>Writing</h2>
+  <section class="writing" id="writing">
+    <div class="writing-inner">
+      <h2 class="section-label">Writing</h2>
       <div class="writing-list">
         <a href="writing/connecting-the-dots.html" class="writing-item">
           <span class="writing-title">Connecting the dots</span>
@@ -121,41 +229,16 @@
           <span class="writing-date">2011</span>
         </a>
       </div>
-
-    </div>
-  </section>
-
-
-  <!-- INVESTING -->
-  <section class="investing section-border" id="investing">
-    <div class="container-wide">
-      <h2>How I Invest</h2>
-      <div class="investing-layout">
-        <div class="principles">
-          <div class="principle">
-            <h3>Two necessary conditions.</h3>
-            <p>High output founders. Deep customer obsession.</p>
-          </div>
-          <div class="principle">
-            <h3>Speed is the signal.</h3>
-            <p>300+ investments. The strongest predictor of success isn't valuation or total raised. It's how fast a founder closes their round and gets back to work.</p>
-          </div>
-          <div class="principle">
-            <h3>It's not a formula.</h3>
-            <p>I've been around long enough to feel it. Strong founders have an energy you recognize immediately. I wish it were more scientific. It's not.</p>
-          </div>
-        </div>
-        <div class="investing-image">
-          <img src="images/kul-founders-group.jpg" alt="Kulveer with YC founders">
-        </div>
-      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
-      <div class="footer-copy">&copy; 2026 Kulveer Taggar</div>
+      <div class="footer-left">
+        <div class="footer-name">Kulveer Taggar</div>
+        <div class="footer-copy">&copy; 2026</div>
+      </div>
       <div class="footer-links">
         <a href="https://www.linkedin.com/in/kulveer/" target="_blank">LinkedIn</a>
         <a href="https://x.com/kul" target="_blank">X</a>
@@ -163,6 +246,20 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.belief, .story-block, .timeline-item, .help-item, .editorial-lead, .reveal, .reveal-delay').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
 
 </body>
 </html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Font Options — Kulveer Site</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,300;1,9..144,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=Space+Grotesk:wght@300;400;500;600&family=Sora:wght@300;400;500;600&family=General+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0d0d0d; color: #fff; padding: 60px 48px; }
+    .option {
+      margin-bottom: 80px;
+      padding-bottom: 80px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .option:last-child { border-bottom: none; }
+    .label {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+      margin-bottom: 32px;
+    }
+    .headline {
+      font-size: 56px;
+      line-height: 1.12;
+      margin-bottom: 32px;
+      max-width: 800px;
+    }
+    .quote {
+      font-size: 32px;
+      line-height: 1.4;
+      max-width: 700px;
+      margin-bottom: 32px;
+      color: rgba(255,255,255,0.8);
+    }
+    .body-text {
+      font-size: 16px;
+      line-height: 28px;
+      color: rgba(255,255,255,0.5);
+      max-width: 600px;
+    }
+
+    /* Option A — Current (Instrument Serif) */
+    .opt-a .headline { font-family: 'Instrument Serif', serif; font-weight: 400; }
+    .opt-a .headline em { font-style: italic; color: rgba(255,255,255,0.65); }
+    .opt-a .quote { font-family: 'Instrument Serif', serif; font-style: italic; }
+    .opt-a .body-text { font-family: 'Inter', sans-serif; font-weight: 300; }
+
+    /* Option B — Fraunces (quirky, warm, has personality) */
+    .opt-b .headline { font-family: 'Fraunces', serif; font-weight: 500; font-size: 52px; }
+    .opt-b .headline em { font-style: italic; font-weight: 300; color: rgba(255,255,255,0.65); }
+    .opt-b .quote { font-family: 'Fraunces', serif; font-style: italic; font-weight: 300; }
+    .opt-b .body-text { font-family: 'DM Sans', sans-serif; font-weight: 300; }
+
+    /* Option C — Space Grotesk (modern, techy, geometric) */
+    .opt-c .headline { font-family: 'Space Grotesk', sans-serif; font-weight: 500; letter-spacing: -0.03em; }
+    .opt-c .headline em { font-style: normal; font-weight: 300; color: rgba(255,255,255,0.55); }
+    .opt-c .quote { font-family: 'Space Grotesk', sans-serif; font-weight: 300; letter-spacing: -0.02em; }
+    .opt-c .body-text { font-family: 'Space Grotesk', sans-serif; font-weight: 300; }
+
+    /* Option D — Sora (clean, friendly, approachable) */
+    .opt-d .headline { font-family: 'Sora', sans-serif; font-weight: 600; letter-spacing: -0.03em; font-size: 50px; }
+    .opt-d .headline em { font-style: normal; font-weight: 300; color: rgba(255,255,255,0.55); }
+    .opt-d .quote { font-family: 'Sora', sans-serif; font-weight: 300; }
+    .opt-d .body-text { font-family: 'Sora', sans-serif; font-weight: 300; }
+
+    /* Option E — DM Sans (casual, versatile, warm) */
+    .opt-e .headline { font-family: 'DM Sans', sans-serif; font-weight: 600; letter-spacing: -0.02em; font-size: 52px; }
+    .opt-e .headline em { font-style: italic; font-weight: 300; color: rgba(255,255,255,0.6); }
+    .opt-e .quote { font-family: 'DM Sans', sans-serif; font-style: italic; font-weight: 300; }
+    .opt-e .body-text { font-family: 'DM Sans', sans-serif; font-weight: 300; }
+
+    /* Option F — DM Sans tweaked: lighter headline, more letter spacing on italic */
+    .opt-f .headline { font-family: 'DM Sans', sans-serif; font-weight: 500; letter-spacing: -0.015em; font-size: 52px; }
+    .opt-f .headline em { font-style: italic; font-weight: 300; color: rgba(255,255,255,0.6); letter-spacing: 0.01em; }
+    .opt-f .quote { font-family: 'DM Sans', sans-serif; font-style: italic; font-weight: 300; letter-spacing: 0.005em; }
+    .opt-f .body-text { font-family: 'DM Sans', sans-serif; font-weight: 300; }
+
+    /* Option G — DM Sans even lighter, more breathing room */
+    .opt-g .headline { font-family: 'DM Sans', sans-serif; font-weight: 400; letter-spacing: -0.01em; font-size: 54px; }
+    .opt-g .headline em { font-style: italic; font-weight: 300; color: rgba(255,255,255,0.6); letter-spacing: 0.02em; }
+    .opt-g .quote { font-family: 'DM Sans', sans-serif; font-style: italic; font-weight: 300; letter-spacing: 0.01em; }
+    .opt-g .body-text { font-family: 'DM Sans', sans-serif; font-weight: 300; }
+  </style>
+</head>
+<body>
+
+  <div class="option opt-a">
+    <div class="label">A — Instrument Serif (current)</div>
+    <div class="headline">I don't have a thesis.<br><em>I have pattern recognition and scar tissue.</em></div>
+    <div class="quote">"If you're actually legitimately the best in the world at that, that's fucking huge."</div>
+    <div class="body-text">Working hard while making progress is energizing. The burnout I experienced at Zeus — it came from people. Brilliant hires who weren't aligned. Investors who wanted control.</div>
+  </div>
+
+  <div class="option opt-b">
+    <div class="label">B — Fraunces (warm, quirky, personality)</div>
+    <div class="headline">I don't have a thesis.<br><em>I have pattern recognition and scar tissue.</em></div>
+    <div class="quote">"If you're actually legitimately the best in the world at that, that's fucking huge."</div>
+    <div class="body-text">Working hard while making progress is energizing. The burnout I experienced at Zeus — it came from people. Brilliant hires who weren't aligned. Investors who wanted control.</div>
+  </div>
+
+  <div class="option opt-c">
+    <div class="label">C — Space Grotesk (modern, techy, geometric)</div>
+    <div class="headline">I don't have a thesis.<br><em>I have pattern recognition and scar tissue.</em></div>
+    <div class="quote">"If you're actually legitimately the best in the world at that, that's fucking huge."</div>
+    <div class="body-text">Working hard while making progress is energizing. The burnout I experienced at Zeus — it came from people. Brilliant hires who weren't aligned. Investors who wanted control.</div>
+  </div>
+
+  <div class="option opt-d">
+    <div class="label">D — Sora (clean, friendly, approachable)</div>
+    <div class="headline">I don't have a thesis.<br><em>I have pattern recognition and scar tissue.</em></div>
+    <div class="quote">"If you're actually legitimately the best in the world at that, that's fucking huge."</div>
+    <div class="body-text">Working hard while making progress is energizing. The burnout I experienced at Zeus — it came from people. Brilliant hires who weren't aligned. Investors who wanted control.</div>
+  </div>
+
+  <div class="option opt-e">
+    <div class="label">E — DM Sans (original)</div>
+    <div class="headline">I don't have a thesis.<br><em>I have pattern recognition and scar tissue.</em></div>
+    <div class="quote">"If you're actually legitimately the best in the world at that, that's fucking huge."</div>
+    <div class="body-text">Working hard while making progress is energizing. The burnout I experienced at Zeus — it came from people. Brilliant hires who weren't aligned. Investors who wanted control.</div>
+  </div>
+
+  <div class="option opt-f">
+    <div class="label">F — DM Sans (lighter headline, more space on italic)</div>
+    <div class="headline">I don't have a thesis.<br><em>I have pattern recognition and scar tissue.</em></div>
+    <div class="quote">"If you're actually legitimately the best in the world at that, that's fucking huge."</div>
+    <div class="body-text">Working hard while making progress is energizing. The burnout I experienced at Zeus — it came from people. Brilliant hires who weren't aligned. Investors who wanted control.</div>
+  </div>
+
+  <div class="option opt-g">
+    <div class="label">G — DM Sans (lightest, most breathing room)</div>
+    <div class="headline">I don't have a thesis.<br><em>I have pattern recognition and scar tissue.</em></div>
+    <div class="quote">"If you're actually legitimately the best in the world at that, that's fucking huge."</div>
+    <div class="body-text">Working hard while making progress is energizing. The burnout I experienced at Zeus — it came from people. Brilliant hires who weren't aligned. Investors who wanted control.</div>
+  </div>
+
+</body>
+</html>
